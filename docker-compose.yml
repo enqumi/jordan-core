@@ -48,7 +48,7 @@ services:
     environment:
       BOT_TOKEN: ${BOT_TOKEN:-}
       WEBAPP_URL: ${WEBAPP_URL:-}
-      INTERNAL_API_KEY: ${INTERNAL_API_KEY:-change-me-internal-key}
+      INTERNAL_API_KEY: ${INTERNAL_API_KEY:-secret-key}
       API_URL: http://api:8000
     depends_on:
       api:

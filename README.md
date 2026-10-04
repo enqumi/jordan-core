@@ -18,8 +18,6 @@ cp .env.example .env        # вписать BOT_TOKEN от @BotFather и POSTGR
 docker compose up -d --build
 ```
 
-Сайт — http://localhost:8000, Mini App в браузере — http://localhost:8080 (вход аккаунтом сайта).
-
 ### Mini App внутри Telegram
 
 Telegram открывает Mini App только по HTTPS. Локально поднимите туннель к порту 8080:

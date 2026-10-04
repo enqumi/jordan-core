@@ -33,7 +33,7 @@ docker compose up -d bot
 ```
 
 Бот сам выставит кнопку меню «Магазин» и команды. Внутри Telegram вход автоматический: API проверяет
-подпись `initData` токеном бота.
+подпись `initData` токеном бота
 
 ## Бот
 
@@ -43,3 +43,8 @@ docker compose up -d bot
 - `/help` — справка
 
 После оформления заказа в Mini App бот присылает уведомление, а когда заказ собран — второе.
+
+.<img width="1920" height="1080" alt="2026-10-04_20-26-22" src="https://github.com/user-attachments/assets/d8f0906e-384e-4c6e-bd41-cdb106771df5" />
+<img width="1920" height="1080" alt="2026-10-04_20-26-15" src="https://github.com/user-attachments/assets/83948eaf-26a2-4e3b-8d05-b0a1622bce44" />
+<img width="1920" height="1080" alt="2026-10-04_20-26-01" src="https://github.com/user-attachments/assets/574e0383-8b77-49b8-8195-0f3e0f7fb194" />
+

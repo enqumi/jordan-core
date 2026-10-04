@@ -1,0 +1,8 @@
+.env
+miniapp/node_modules
+miniapp/dist
+__pycache__/
+*.pyc
+.test.html
+.d.png
+.m.png

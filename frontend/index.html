@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru" class="bg-graphite-950">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JORDAN // CORE — Flight Above All</title>
+  <meta name="description" content="JORDAN // CORE — концептуальный магазин самых актуальных релизов Air Jordan: коллаборации и ретро.">
+  <meta name="theme-color" content="#0A0A0C">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            graphite: { 950: '#0A0A0C', 900: '#0F0F12', 800: '#16161A', 700: '#1E1E23', 600: '#2A2A31' },
+            infrared: { DEFAULT: '#FF2D3D', deep: '#E0142A', glow: '#FF4655' },
+          },
+          fontFamily: {
+            sans: ['"Inter Tight"', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body class="min-h-screen bg-graphite-950 font-sans text-white antialiased selection:bg-infrared selection:text-white">
+  <a href="#drops" class="skip-link">Перейти к дропам</a>
+
+  <header data-header class="site-header fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex h-16 max-w-[1440px] items-center justify-between gap-6 px-5 sm:px-8 lg:px-12">
+      <a href="#top" class="flex min-h-[44px] items-center text-[15px] font-extrabold tracking-[0.18em]" aria-label="JORDAN // CORE — на главную">
+        JORDAN<span class="mx-2 text-infrared">//</span>CORE
+      </a>
+
+      <nav aria-label="Основная навигация" class="hidden md:block">
+        <ul class="flex items-center gap-1 text-sm font-medium text-white/60">
+          <li><a class="nav-link" href="#drops">Дропы</a></li>
+          <li><a class="nav-link" href="#drops" data-filter-link="Коллаборация">Коллаборации</a></li>
+          <li><a class="nav-link" href="#drops" data-filter-link="Ретро">Ретро</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-2">
+      <div class="relative">
+        <button type="button" data-account-toggle aria-expanded="false" aria-controls="account-panel"
+                class="account-button flex h-11 min-w-[44px] items-center justify-center gap-2 rounded-full px-3 text-sm font-semibold ring-1 ring-white/15 transition hover:ring-white/40 sm:px-4">
+          <span class="sr-only">Войти в аккаунт</span>
+        </button>
+        <div id="account-panel" data-account-panel hidden class="bag-panel"></div>
+      </div>
+
+      <div class="relative">
+        <button type="button" data-bag-toggle aria-expanded="false" aria-controls="bag-panel"
+                class="bag-button flex h-11 min-w-[44px] items-center gap-2 rounded-full px-4 text-sm font-semibold ring-1 ring-white/15 transition hover:ring-white/40">
+          <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+          </svg>
+          <span class="hidden sm:inline">Корзина</span>
+          <span data-bag-count class="bag-count" aria-hidden="true">0</span>
+          <span class="sr-only" data-bag-label>Корзина, 0 товаров</span>
+        </button>
+        <div id="bag-panel" data-bag-panel hidden class="bag-panel"></div>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero relative isolate overflow-hidden" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="relative mx-auto flex min-h-[100svh] max-w-[1440px] flex-col justify-end px-5 pb-10 pt-28 sm:px-8 lg:px-12 lg:pb-14">
+        <div class="mb-8 flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/50">
+          <p><span class="text-infrared">●</span>&nbsp; SS26 / Core drops</p>
+          <p data-next-drop></p>
+        </div>
+
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-line">Flight</span>
+          <span class="hero-line hero-line--outline">Above</span>
+          <span class="hero-line">All<span class="text-infrared">.</span></span>
+        </h1>
+
+        <div class="mt-10 grid gap-8 border-t border-white/10 pt-8 md:grid-cols-[1fr_auto] md:items-end">
+          <p class="max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
+            Кураторская витрина самых обсуждаемых релизов Jordan Brand: коллаборации, которые сносят SNKRS,
+            и ретро, ради которых стоят в очередях. Цены retail и рынка обновляются вместе с базой.
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#drops" class="btn-primary">
+              Смотреть дропы
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-white/50"><span data-stat-pairs>00</span> пар в ротации</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticker border-y border-white/10 bg-graphite-900/80" aria-hidden="true">
+        <div class="ticker-track" data-ticker></div>
+      </div>
+    </section>
+
+    <section id="drops" class="relative mx-auto max-w-[1440px] scroll-mt-20 px-5 py-20 sm:px-8 lg:px-12 lg:py-28" aria-labelledby="drops-title">
+      <div class="mb-10 flex flex-col gap-6 lg:mb-14 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-infrared">/ 01 — Актуальные релизы</p>
+          <h2 id="drops-title" class="mt-4 text-4xl font-black uppercase leading-[0.9] tracking-tight sm:text-5xl lg:text-6xl">
+            Горячее<br class="hidden sm:block"> прямо сейчас
+          </h2>
+        </div>
+        <div class="flex flex-col gap-3 lg:items-end">
+          <div data-filters role="group" aria-label="Фильтр по категории" class="flex flex-wrap gap-2"></div>
+          <p data-result-count class="font-mono text-xs uppercase tracking-[0.2em] text-white/40" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div data-product-grid class="bento" aria-live="polite"></div>
+
+      <noscript>
+        <p class="rounded-3xl bg-graphite-800 p-8 text-white/70">Включите JavaScript, чтобы увидеть каталог.</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-10 text-sm text-white/40 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-12">
+      <p class="font-extrabold tracking-[0.18em] text-white">JORDAN<span class="mx-2 text-infrared">//</span>CORE</p>
+      <p>Концепт-проект. Не аффилирован с Nike, Inc. и Jordan Brand. Цены ориентировочные.</p>
+    </div>
+  </footer>
+
+  <dialog data-auth-dialog class="modal"></dialog>
+  <dialog data-checkout-dialog class="modal modal--wide"></dialog>
+
+  <div data-notices class="notices" popover="manual" aria-live="polite"></div>
+
+  <div data-toast class="toast" popover="manual" role="status" aria-live="polite"></div>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>

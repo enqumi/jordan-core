@@ -47,4 +47,10 @@ docker compose up -d bot
 .<img width="1920" height="1080" alt="2026-10-04_20-26-22" src="https://github.com/user-attachments/assets/d8f0906e-384e-4c6e-bd41-cdb106771df5" />
 <img width="1920" height="1080" alt="2026-10-04_20-26-15" src="https://github.com/user-attachments/assets/83948eaf-26a2-4e3b-8d05-b0a1622bce44" />
 <img width="1920" height="1080" alt="2026-10-04_20-26-01" src="https://github.com/user-attachments/assets/574e0383-8b77-49b8-8195-0f3e0f7fb194" />
+<img width="369" height="800" alt="Untitled" src="https://github.com/user-attachments/assets/c4a79932-3c2b-4d9b-be18-4a106970d4e8" />
+<img width="369" height="800" alt="scrn6" src="https://github.com/user-attachments/assets/59c13283-4fe5-4c1c-b45f-283f870672b2" />
+<img width="369" height="800" alt="scrn2" src="https://github.com/user-attachments/assets/1084cdeb-dfde-4c26-bff2-7b4a00f830d0" />
+<img width="369" height="800" alt="scr5" src="https://github.com/user-attachments/assets/43a6630a-de6a-4fd0-8553-c1871fcf0c26" />
+<img width="369" height="800" alt="scr4" src="https://github.com/user-attachments/assets/823d40f0-9814-4eec-8952-81d7fd809936" />
+<img width="369" height="800" alt="sc3" src="https://github.com/user-attachments/assets/b52b5c0a-c69f-4234-9ba7-752ca13aab7c" />
 
